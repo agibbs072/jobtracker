@@ -24,4 +24,5 @@ class Jobs(models.Model):
         max_length=50,
         choices=status_choices
     )
-    notes = models.CharField(max_length=100)
+
+    notes = models.CharField(max_length=100, blank=True)
