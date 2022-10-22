@@ -1,11 +1,20 @@
-from .models import Jobs
+from .models import Stages, Statuses
 from rest_framework import viewsets, permissions
-from .serializers import JobSerializer
+from .serializers import StatusSerializer, StagesSerializer
 
 
-class JobViewSet(viewsets.ModelViewSet):
-    queryset = Jobs.objects.all()
+class StatusViewSet(viewsets.ModelViewSet):
+    queryset = Statuses.objects.all()
     permission_classes = [
         permissions.AllowAny
     ]
-    serializer_class = JobSerializer
+    serializer_class = StatusSerializer
+
+
+class StageViewSet(viewsets.ModelViewSet):
+    queryset = Stages.objects.all()
+    permission_classes = [
+        permissions.AllowAny
+    ]
+    serializer_class = StagesSerializer
+

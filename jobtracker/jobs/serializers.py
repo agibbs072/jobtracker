@@ -1,9 +1,14 @@
 from rest_framework import serializers
-from .models import Jobs
+from .models import Statuses, Stages
 
 
-class JobSerializer(serializers.ModelSerializer):
+class StatusSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Jobs
+        model = Statuses
         fields = '__all__'
 
+
+class StagesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Stages
+        fields = '__all__'
