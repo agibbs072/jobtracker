@@ -171,5 +171,3 @@ fabric.properties
 # test database
 # db.sqlite3
 
-# node modules
-node_modules/
