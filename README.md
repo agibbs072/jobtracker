@@ -1,12 +1,8 @@
 # Jobtracker
 
-___
-
 Jobtracker is a single page application that allows users to maintain a list of jobs they apply for.
 
 # How it works
-
----
 
 The frontend uses react for views and redux to maintain the state for job options as well as the list of user entered 
 jobs. It also uses styled components and responsive web design for the page. Each time the user creates a new job, the
@@ -16,8 +12,6 @@ is able to keep their table after closing the window because it is also saved in
 technologies.
 
 # Roadmap
-
-___
 
 future iterations of jobtracker will implement the following:
 * React Testing Library / Jest
